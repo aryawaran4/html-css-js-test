@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>HTML CSS 2</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>Simple Pricing!</h1>
+            <p>The most advanced customer support tools woth simple and affordable pricing. And you can always try for 30 days. free!</p>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="content">
+            <div class="card" id="card-1">
+                <div class="title-container">                
+                    <p class="title">BASIC</p>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <p class="tag">$</p>
+                        <p class="value">4 <span>/month</span> </p>
+                    </div>
+                    <div class="info">
+                        <p><span>10</span> Projects</p>
+                        <p><span>10</span> Pages</p>
+                        <p><span>100</span> Mb Disk Space</p>
+                    </div>
+                    <button onclick="buy()">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="card" id="card-2">
+                <div class="title-container">                
+                    <p class="title">STANDART</p>
+                    <P class="discount">Save 15%</P>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <p class="tag">$</p>
+                        <p class="value">8 <span>/month</span> </p>
+                    </div>
+                    <div class="info">
+                        <p><span>20</span> Projects</p>
+                        <p><span>20</span> Pages</p>
+                        <p><span>200</span> Mb Disk Space</p>
+                    </div>
+                    <button onclick="buy()">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="card" id="card-3">
+                <div class="title-container">                
+                    <p class="title">Advanced</p>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <p class="tag">$</p>
+                        <p class="value">12 <span>/month</span> </p>
+                    </div>
+                    <div class="info">
+                        <p><span>40</span> Projects</p>
+                        <p><span>40</span> Pages</p>
+                        <p><span>500</span> Mb Disk Space</p>
+                    </div>
+                    <button onclick="buy()">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            <h2>Frequently Asked Questions</h2>
+            <div class="question-container">
+                <div class="question">
+                    <p class="title">How does free trial work?</p>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis neque ut neque blandit bibendum. Aenean diam est, tempus et consequat.</p>
+                </div>
+    
+                <div class="question">
+                    <p class="title">Can I Cancel Anytime?</p>
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam commodo sapien sed convallis. Sed viverra efficitur mi, sed ultrices augue feugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function buy() {
+            alert("Success!");
+        }
+
+        const card1 = document.getElementById('card-1');
+
+        card1.onclick = function() {
+            card1.style.backgroundColor = '#e1e1e1';
+        };
+
+        const card2 = document.getElementById('card-2');
+
+        card2.onclick = function() {
+            card2.style.backgroundColor = '#e1e1e1';
+        };
+
+        const card3 = document.getElementById('card-3');
+
+        card3.onclick = function() {
+            card3.style.backgroundColor = '#e1e1e1';
+        };
+    </script>
+</body>
+</html>
